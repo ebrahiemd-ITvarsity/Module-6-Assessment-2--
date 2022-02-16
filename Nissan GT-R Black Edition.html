@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+	<head>
+        <title>Auto4Sale</title>
+	   <link rel="stylesheet" href="style1.css">
+	</head>
+	<body>
+        <center><h1>Nissan GT-R Black Edition</h1></center>
+        
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="sale.html">Sale</a></li>
+</ul>
+        
+       <br/>
+
+<div class="container">
+
+    
+        
+  <div class="mySlides">
+    <div class="numbertext">1 / 12</div>
+      
+    <center>
+      <img src="https://img.autotrader.co.za/16631130/Crop800x600" style="width:50%">
+    </center>
+      
+  </div>
+        
+        
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 12</div>
+      
+      <center>
+      <img src="https://img.autotrader.co.za/16631131/Crop800x600" style="width:50%">
+      </center>    
+          
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 12</div>
+      
+      <center>
+      <img src="https://img.autotrader.co.za/16631132/Crop800x600" style="width:50%">
+      </center>
+      
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 12</div>
+      
+      <center>
+      <img src="https://img.autotrader.co.za/16631133/Crop800x600" style="width:50%">
+      </center>
+      
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 12</div>
+      
+      <center>
+      <img src="https://img.autotrader.co.za/16631134/Crop800x600" style="width:50%">
+      </center>
+      
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 12</div>
+      
+      <center>
+      <img src="https://img.autotrader.co.za/16631135/Crop800x600" style="width:50%">
+      </center>
+      
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">7 / 12</div>
+      
+      <center>
+      <img src="https://img.autotrader.co.za/16631136/Crop800x600" style="width:50%">
+      </center>
+      
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">8 / 12</div>
+      
+      <center>
+      <img src="https://img.autotrader.co.za/16631137/Crop800x600" style="width:50%">
+      </center>
+      
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">9 / 12</div>
+      
+      <center>
+      <img src="https://img.autotrader.co.za/16631138/Crop800x600" style="width:50%">
+      </center>
+      
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">10 / 12</div>
+      
+      <center>
+      <img src="https://img.autotrader.co.za/16631139/Crop800x600" style="width:50%">
+      </center>
+    
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">11 / 12</div>
+      
+      <center>
+      <img src="https://img.autotrader.co.za/16631140/Crop800x600" style="width:50%">
+      </center>
+    
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">12 / 12</div>
+      
+      <center>
+      <img src="https://i.ytimg.com/vi/2N86VMrPAx0/maxresdefault.jpg" style="width:50%">
+      </center>
+      
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  
+
+</div>
+        
+    
+        
+        <h2> About The Car</h2>
+    
+
+<p>The Nissan R35 has its engine and rear-mounted dual-clutch gearbox built by hand, limiting production to around 1000 cars a month. It also features the world's first independent transaxle 4WD developed by Nissan. ... Just like its predecessors, the “R32-R34”, the R35 is all-wheel drive with a twin-turbo 6 cylinder engine.</p>
+<br>
+<p>For More details and Price you can contact us <a href="contact.html">here...</a></p>
+
+<div id="copyright">
+    <p>&copy; All Rights Reserved | Designed by Ebrahiem  </p>
+</div>
+	</body>
+    <script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    </script>
+</html>
